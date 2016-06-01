@@ -1,6 +1,7 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.h2database</groupId>
+    <!-- changed groupId to denote patched version -->
+    <groupId>au.com.vitagroup.h2database</groupId>
     <artifactId>h2</artifactId>
     <version>@version@</version>
     <packaging>jar</packaging>
