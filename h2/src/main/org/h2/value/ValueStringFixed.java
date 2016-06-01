@@ -42,7 +42,9 @@ public class ValueStringFixed extends ValueString {
      * @return the value
      */
     public static ValueStringFixed get(String s) {
-        s = trimRight(s);
+        if(SysProperties.TRIM_FIXED_LENGTH_CHARACTER_VALUES) {
+            s = trimRight(s);
+        }
         if (s.length() == 0) {
             return EMPTY;
         }

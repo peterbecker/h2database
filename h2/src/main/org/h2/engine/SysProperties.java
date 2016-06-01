@@ -522,6 +522,15 @@ public class SysProperties {
     public static final String JAVA_OBJECT_SERIALIZER =
             Utils.getProperty("h2.javaObjectSerializer", null);
 
+    /**
+     * System property <code>h2.trimFixedLengthCharacterValues</code>
+     * (default: true).<br />
+     * All fixed length character values will be trimmed of whitespace on the
+     * right if this property is set to true.
+     */
+    public static final boolean TRIM_FIXED_LENGTH_CHARACTER_VALUES =
+            Utils.getProperty("h2.trimFixedLengthCharacterValues", true);
+
     private static final String H2_BASE_DIR = "h2.baseDir";
 
     private SysProperties() {
